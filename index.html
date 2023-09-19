@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jikan API Example</title>
     <link rel="stylesheet" type="text/css" href="global.css" />
-</head>
-<body>
-    <div id="h1">
+  </head>
+  <body>
+    <div id="header-container">
+      <div id="h1">
         <h1>Anime Information</h1>
+      </div>
+      <button id="fetchButton">Generate Summary</button>
     </div>
-    <button id="fetchButton">Generate Summary</button>
+    <div class="label-select-container">
+      <label for="sortSelect">Sort by Duration:</label>
+      <select id="sortSelect">
+        <option value="shortest">Shortest to Longest</option>
+        <option value="longest">Longest to Shortest</option>
+      </select>
+    </div>
+
     <div class="card-container" class="row" id="resultContainer"></div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

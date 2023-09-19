@@ -5,11 +5,22 @@ body {
   background-image: url("/images/bg-img.jpeg");
   background-repeat: repeat;
 }
+
+#header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 100px; /* Set a fixed height as needed */
+}
+
 h1 {
   color: #ffffff;
   background-color: #0f0cd0;
   border-radius: 30px;
   display: inline-block;
+  margin-bottom: 10px; /* Add some margin to separate h1 and button */
 }
 
 button {
@@ -96,4 +107,31 @@ button:active {
 .card:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
+}
+
+/* Container for label and select */
+.label-select-container {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 10px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+/* Style the label */
+label {
+  color: white;
+  margin-right: 10px; /* Add margin to separate label and select */
+}
+
+/* Style the select */
+#sortSelect {
+  border-radius: 30px;
+  color: #fff;
+  background: linear-gradient(to bottom, #0f0cd0, #5c7cff);
+  border: none;
+  cursor: pointer;
+  padding: 5px 5px;
 }
